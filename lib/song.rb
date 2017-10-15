@@ -28,7 +28,7 @@ class Song
   def artists
     new_array = []
     new_array = @@artists.uniq
-    new_array    
+    new_array
   end
 
 
