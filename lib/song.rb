@@ -19,19 +19,19 @@ class Song
     return @@count
   end
 
-  def genres
+  def self.genres
     new_array = []
     new_array = @@genres.uniq
     new_array
   end
 
-  def artists
+  def self.artists
     new_array = []
     new_array = @@artists.uniq
     new_array
   end
 
-  def genre_count
+  def self.genre_count
     new_hash = {}
     @@genres.each do |genre|
       if new_hash.includes?(genre)
