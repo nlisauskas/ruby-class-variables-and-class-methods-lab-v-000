@@ -31,5 +31,13 @@ class Song
     new_array
   end
 
+  def genre_count
+    new_hash = {}
+    @@genres.each do |genre|
+      if !new_hash.includes?(genre) then
+      new_hash << genre end
+    end
+  end
+
 
 end
