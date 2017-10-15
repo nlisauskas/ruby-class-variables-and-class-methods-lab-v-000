@@ -18,7 +18,9 @@ class Song
   end
 
   def genres
-
+    new_array = []
+    new_array = @@genres.uniq
+    new_array
   end
 
 
